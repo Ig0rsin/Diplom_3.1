@@ -11,7 +11,8 @@ public class UserRegisterRequest {
     private String name;
 }
 
-/* public class UserRegisterRequest {
+/*
+public class UserRegisterRequest {
     private String email;
     private String password;
     private String name;

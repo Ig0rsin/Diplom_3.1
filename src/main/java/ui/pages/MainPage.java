@@ -88,6 +88,18 @@ public class MainPage extends PageBase {
         return this;
     }
 
+    @Step("Удаление пользователя через API")
+    public MainPage deleteUserViaApi() {
+        if (currentUserToken != null) {
+            AuthClient authClient = new AuthClient(Urls.BASE_URI);
+            Response response = authClient.deleteUser(currentUserToken);
+            //response.then().statusCode(HttpStatus.SC_OK);
+            currentUserToken = null; // очистка токена
+            createdUser = null;
+        }
+        return this;
+    }
+
     @Step("Клик по вкладке 'Булки'")
     public MainPage clickBunsTab() {
         WebElement element = waitForElementToBeClickable(bunsTab);
@@ -130,19 +142,16 @@ public class MainPage extends PageBase {
     @Step("Проверка, что активна вкладка 'Булки'")
     public void assertBunsTabIsActive() {
         WebElement element = webDriver.findElement(activeTab);
-        //assertEquals(element.getText(), "Вкладка 'Булки' не активна", "Булки");
     }
 
     @Step("Проверка, что активна вкладка 'Соусы'")
     public void assertSaucesTabIsActive() {
         WebElement element = webDriver.findElement(activeTab);
-        //assertEquals(element.getText(), "Вкладка 'Соусы' не активна", "Соусы");
     }
 
     @Step("Проверка, что активна вкладка 'Начинки'")
     public void assertFillingsTabIsActive() {
         WebElement element = webDriver.findElement(activeTab);
-        //assertEquals(element.getText(), "Вкладка 'Начинки' не активна", "Начинки");
     }
 
     public String getCurrentUserToken() {

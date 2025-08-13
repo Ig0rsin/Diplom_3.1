@@ -12,7 +12,8 @@ public class User {
     private String name;
 }
 
-/*public class User {
+/*
+public class User {
     private String email;
     private String name;
 

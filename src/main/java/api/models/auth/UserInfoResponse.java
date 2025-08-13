@@ -12,7 +12,8 @@ public class UserInfoResponse {
     private User user;
 }
 
-/*public class UserInfoResponse {
+/*
+public class UserInfoResponse {
     private boolean success;
     private User user;
 

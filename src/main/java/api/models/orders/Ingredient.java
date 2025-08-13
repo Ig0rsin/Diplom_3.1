@@ -22,7 +22,8 @@ public class Ingredient {
     private int __v;
 }
 
-/* public class Ingredient {
+/*
+public class Ingredient {
     private String _id;
     private String name;
     private String type;

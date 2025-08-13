@@ -12,7 +12,8 @@ public class UserInfoUpdateRequest {
     private String name;
 }
 
-/*public class UserInfoUpdateRequest {
+/*
+public class UserInfoUpdateRequest {
     private String email;
     private String name;
 

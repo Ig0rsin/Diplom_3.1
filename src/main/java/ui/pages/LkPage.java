@@ -10,7 +10,7 @@ import constants.Urls;
 
 public class LkPage extends PageBase {
 
-    private final By loginInput = By.xpath(".//label[text()='Логин']/following-sibling::input");
+    private final By loginInput = By.xpath(".//label[text()='Логин']/following-sibling::input"); // было .//input[@class='text input__textfield text_type_main-default input__textfield-disabled' and @name='name']
     private final By exitButton = By.xpath(".//button[text()='Выход']");
 
     public LkPage(WebDriver webDriver) {

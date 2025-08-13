@@ -14,7 +14,8 @@ public class Owner {
     private String updatedAt;
 }
 
-/* public class Owner {
+/*
+public class Owner {
     private String createdAt;
     private String email;
     private String name;

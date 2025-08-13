@@ -12,7 +12,8 @@ public class UserLogoutResponse {
     private String message;
 }
 
-/* public class UserLogoutResponse {
+/*
+public class UserLogoutResponse {
     private boolean success;
     private String message;
 

@@ -9,7 +9,8 @@ public class UserLogoutRequest {
     private String token;
 }
 
-/* package api.models.auth;
+/*
+package api.models.auth;
 
 public class UserLogoutRequest {
     private String token;
